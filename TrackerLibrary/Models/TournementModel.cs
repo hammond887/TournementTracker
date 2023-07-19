@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.Models
 {
     public class TournementModel
     {
-        public string TournementName { get; set; } 
+        public string TournementName { get; set; }
         public decimal EntryFee { get; set; }
         public List<TeamModel> EnteredTeams { get; set; } = new List<TeamModel>();
         public List<PrizeModel> Prizes { get; set; } = new List<PrizeModel>();
@@ -17,4 +17,4 @@ namespace TrackerLibrary
         public MatchingEntryModel MatchingEntry { get; set; }
 
     }
-} 
+}
