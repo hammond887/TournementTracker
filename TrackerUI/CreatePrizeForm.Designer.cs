@@ -34,9 +34,9 @@
             prizePercentageLabel = new Label();
             prizeAmountValue = new TextBox();
             prizeAmountLabel = new Label();
-            prizeNameValue = new TextBox();
+            placeNameValue = new TextBox();
             prizeNameLabel = new Label();
-            prizeNumberValue = new TextBox();
+            placeNumberValue = new TextBox();
             prizeNumberLabel = new Label();
             orLabel = new Label();
             SuspendLayout();
@@ -66,6 +66,7 @@
             createPrizeButton.TabIndex = 59;
             createPrizeButton.Text = "Create Prize";
             createPrizeButton.UseVisualStyleBackColor = true;
+            createPrizeButton.Click += createPrizeButton_Click;
             // 
             // prizePercentageValue
             // 
@@ -74,6 +75,7 @@
             prizePercentageValue.Name = "prizePercentageValue";
             prizePercentageValue.Size = new Size(100, 23);
             prizePercentageValue.TabIndex = 58;
+            prizePercentageValue.Text = "0";
             // 
             // prizePercentageLabel
             // 
@@ -93,6 +95,7 @@
             prizeAmountValue.Name = "prizeAmountValue";
             prizeAmountValue.Size = new Size(100, 23);
             prizeAmountValue.TabIndex = 56;
+            prizeAmountValue.Text = "0";
             // 
             // prizeAmountLabel
             // 
@@ -106,13 +109,13 @@
             prizeAmountLabel.Text = "Prize Amount";
             prizeAmountLabel.TextAlign = ContentAlignment.TopCenter;
             // 
-            // prizeNameValue
+            // placeNameValue
             // 
-            prizeNameValue.BorderStyle = BorderStyle.FixedSingle;
-            prizeNameValue.Location = new Point(146, 76);
-            prizeNameValue.Name = "prizeNameValue";
-            prizeNameValue.Size = new Size(100, 23);
-            prizeNameValue.TabIndex = 54;
+            placeNameValue.BorderStyle = BorderStyle.FixedSingle;
+            placeNameValue.Location = new Point(146, 76);
+            placeNameValue.Name = "placeNameValue";
+            placeNameValue.Size = new Size(100, 23);
+            placeNameValue.TabIndex = 54;
             // 
             // prizeNameLabel
             // 
@@ -125,13 +128,13 @@
             prizeNameLabel.TabIndex = 53;
             prizeNameLabel.Text = "Place Name";
             // 
-            // prizeNumberValue
+            // placeNumberValue
             // 
-            prizeNumberValue.BorderStyle = BorderStyle.FixedSingle;
-            prizeNumberValue.Location = new Point(146, 47);
-            prizeNumberValue.Name = "prizeNumberValue";
-            prizeNumberValue.Size = new Size(100, 23);
-            prizeNumberValue.TabIndex = 52;
+            placeNumberValue.BorderStyle = BorderStyle.FixedSingle;
+            placeNumberValue.Location = new Point(146, 47);
+            placeNumberValue.Name = "placeNumberValue";
+            placeNumberValue.Size = new Size(100, 23);
+            placeNumberValue.TabIndex = 52;
             // 
             // prizeNumberLabel
             // 
@@ -167,9 +170,9 @@
             Controls.Add(prizePercentageLabel);
             Controls.Add(prizeAmountValue);
             Controls.Add(prizeAmountLabel);
-            Controls.Add(prizeNameValue);
+            Controls.Add(placeNameValue);
             Controls.Add(prizeNameLabel);
-            Controls.Add(prizeNumberValue);
+            Controls.Add(placeNumberValue);
             Controls.Add(prizeNumberLabel);
             Controls.Add(CreatePrizeLabel);
             Name = "CreatePrizeForm";
@@ -185,9 +188,9 @@
         private Label prizePercentageLabel;
         private TextBox prizeAmountValue;
         private Label prizeAmountLabel;
-        private TextBox prizeNameValue;
+        private TextBox placeNameValue;
         private Label prizeNameLabel;
-        private TextBox prizeNumberValue;
+        private TextBox placeNumberValue;
         private Label prizeNumberLabel;
         private Label orLabel;
     }
