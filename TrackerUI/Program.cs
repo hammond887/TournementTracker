@@ -1,3 +1,5 @@
+using TrackerLibrary;
+
 namespace TrackerUI
 {
     internal static class Program
@@ -11,11 +13,12 @@ namespace TrackerUI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            
 
             // initialize db connections
-            TrackerLibrary.GlobalConfig.InitializeConnections(true,true);
+            TrackerLibrary.GlobalConfig.InitializeConnections(DatabaseType.TextFile);
 
-            Application.Run(new CreatePrizeForm());
+            Application.Run(new CreateTeamForm());
         }
     }
 }
