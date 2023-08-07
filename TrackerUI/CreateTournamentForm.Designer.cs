@@ -51,9 +51,10 @@
             // 
             tournamentNameText.BorderStyle = BorderStyle.FixedSingle;
             tournamentNameText.ForeColor = Color.Coral;
-            tournamentNameText.Location = new Point(14, 70);
+            tournamentNameText.Location = new Point(16, 93);
+            tournamentNameText.Margin = new Padding(3, 4, 3, 4);
             tournamentNameText.Name = "tournamentNameText";
-            tournamentNameText.Size = new Size(177, 23);
+            tournamentNameText.Size = new Size(202, 27);
             tournamentNameText.TabIndex = 25;
             // 
             // tournamentNameLabel
@@ -61,9 +62,9 @@
             tournamentNameLabel.AutoSize = true;
             tournamentNameLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tournamentNameLabel.ForeColor = Color.Coral;
-            tournamentNameLabel.Location = new Point(14, 46);
+            tournamentNameLabel.Location = new Point(16, 61);
             tournamentNameLabel.Name = "tournamentNameLabel";
-            tournamentNameLabel.Size = new Size(139, 21);
+            tournamentNameLabel.Size = new Size(173, 28);
             tournamentNameLabel.TabIndex = 18;
             tournamentNameLabel.Text = "Tournament Name";
             // 
@@ -72,10 +73,10 @@
             CreateTournamentLabel.AutoSize = true;
             CreateTournamentLabel.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             CreateTournamentLabel.ForeColor = Color.Coral;
-            CreateTournamentLabel.Location = new Point(14, 12);
-            CreateTournamentLabel.Margin = new Padding(5, 0, 5, 0);
+            CreateTournamentLabel.Location = new Point(16, 16);
+            CreateTournamentLabel.Margin = new Padding(6, 0, 6, 0);
             CreateTournamentLabel.Name = "CreateTournamentLabel";
-            CreateTournamentLabel.Size = new Size(177, 25);
+            CreateTournamentLabel.Size = new Size(224, 32);
             CreateTournamentLabel.TabIndex = 16;
             CreateTournamentLabel.Text = "Create Tournament:";
             // 
@@ -84,9 +85,9 @@
             entryFeeLabel.AutoSize = true;
             entryFeeLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             entryFeeLabel.ForeColor = Color.Coral;
-            entryFeeLabel.Location = new Point(14, 119);
+            entryFeeLabel.Location = new Point(16, 159);
             entryFeeLabel.Name = "entryFeeLabel";
-            entryFeeLabel.Size = new Size(77, 21);
+            entryFeeLabel.Size = new Size(96, 28);
             entryFeeLabel.TabIndex = 26;
             entryFeeLabel.Text = "Entry Fee:";
             // 
@@ -94,18 +95,20 @@
             // 
             entryFeeText.BorderStyle = BorderStyle.FixedSingle;
             entryFeeText.ForeColor = Color.Coral;
-            entryFeeText.Location = new Point(97, 119);
+            entryFeeText.Location = new Point(111, 159);
+            entryFeeText.Margin = new Padding(3, 4, 3, 4);
             entryFeeText.Name = "entryFeeText";
-            entryFeeText.Size = new Size(80, 23);
+            entryFeeText.Size = new Size(91, 27);
             entryFeeText.TabIndex = 27;
             entryFeeText.Text = "0";
             // 
             // selectTeamDropDown
             // 
             selectTeamDropDown.FormattingEnabled = true;
-            selectTeamDropDown.Location = new Point(14, 191);
+            selectTeamDropDown.Location = new Point(16, 255);
+            selectTeamDropDown.Margin = new Padding(3, 4, 3, 4);
             selectTeamDropDown.Name = "selectTeamDropDown";
-            selectTeamDropDown.Size = new Size(104, 23);
+            selectTeamDropDown.Size = new Size(202, 28);
             selectTeamDropDown.TabIndex = 29;
             // 
             // selectTeamLabel
@@ -113,22 +116,23 @@
             selectTeamLabel.AutoSize = true;
             selectTeamLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             selectTeamLabel.ForeColor = Color.Coral;
-            selectTeamLabel.Location = new Point(11, 167);
+            selectTeamLabel.Location = new Point(13, 223);
             selectTeamLabel.Name = "selectTeamLabel";
             selectTeamLabel.RightToLeft = RightToLeft.Yes;
-            selectTeamLabel.Size = new Size(91, 21);
+            selectTeamLabel.Size = new Size(114, 28);
             selectTeamLabel.TabIndex = 28;
             selectTeamLabel.Text = "Select Team";
             // 
             // createNewTeam
             // 
             createNewTeam.AutoSize = true;
-            createNewTeam.Location = new Point(131, 199);
+            createNewTeam.Location = new Point(133, 230);
             createNewTeam.Name = "createNewTeam";
-            createNewTeam.Size = new Size(66, 15);
+            createNewTeam.Size = new Size(84, 20);
             createNewTeam.TabIndex = 30;
             createNewTeam.TabStop = true;
             createNewTeam.Text = "create New";
+            createNewTeam.LinkClicked += createNewTeam_LinkClicked;
             // 
             // addTeamButton
             // 
@@ -137,12 +141,14 @@
             addTeamButton.FlatStyle = FlatStyle.Flat;
             addTeamButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             addTeamButton.ForeColor = Color.Coral;
-            addTeamButton.Location = new Point(65, 231);
+            addTeamButton.Location = new Point(57, 308);
+            addTeamButton.Margin = new Padding(3, 4, 3, 4);
             addTeamButton.Name = "addTeamButton";
-            addTeamButton.Size = new Size(88, 32);
+            addTeamButton.Size = new Size(128, 43);
             addTeamButton.TabIndex = 31;
             addTeamButton.Text = "Add Team";
             addTeamButton.UseVisualStyleBackColor = true;
+            addTeamButton.Click += addTeamButton_Click;
             // 
             // createPrizeButton
             // 
@@ -151,32 +157,36 @@
             createPrizeButton.FlatStyle = FlatStyle.Flat;
             createPrizeButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             createPrizeButton.ForeColor = Color.Coral;
-            createPrizeButton.Location = new Point(53, 269);
+            createPrizeButton.Location = new Point(57, 359);
+            createPrizeButton.Margin = new Padding(3, 4, 3, 4);
             createPrizeButton.Name = "createPrizeButton";
-            createPrizeButton.Size = new Size(112, 32);
+            createPrizeButton.Size = new Size(128, 43);
             createPrizeButton.TabIndex = 32;
             createPrizeButton.Text = "Create Prize";
             createPrizeButton.UseVisualStyleBackColor = true;
+            createPrizeButton.Click += createPrizeButton_Click;
             // 
             // tournamentPlayersListBox
             // 
-            tournamentPlayersListBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tournamentPlayersListBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tournamentPlayersListBox.FormattingEnabled = true;
-            tournamentPlayersListBox.ItemHeight = 21;
-            tournamentPlayersListBox.Location = new Point(213, 70);
+            tournamentPlayersListBox.ItemHeight = 20;
+            tournamentPlayersListBox.Location = new Point(243, 93);
+            tournamentPlayersListBox.Margin = new Padding(3, 4, 3, 4);
             tournamentPlayersListBox.Name = "tournamentPlayersListBox";
-            tournamentPlayersListBox.Size = new Size(190, 88);
+            tournamentPlayersListBox.Size = new Size(217, 104);
             tournamentPlayersListBox.TabIndex = 33;
+            tournamentPlayersListBox.SelectedIndexChanged += tournamentPlayersListBox_SelectedIndexChanged;
             // 
             // tournamentPlayersLLabel
             // 
             tournamentPlayersLLabel.AutoSize = true;
             tournamentPlayersLLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tournamentPlayersLLabel.ForeColor = Color.Coral;
-            tournamentPlayersLLabel.Location = new Point(213, 46);
+            tournamentPlayersLLabel.Location = new Point(243, 61);
             tournamentPlayersLLabel.Name = "tournamentPlayersLLabel";
             tournamentPlayersLLabel.RightToLeft = RightToLeft.Yes;
-            tournamentPlayersLLabel.Size = new Size(117, 21);
+            tournamentPlayersLLabel.Size = new Size(144, 28);
             tournamentPlayersLLabel.TabIndex = 34;
             tournamentPlayersLLabel.Text = "Teams / Players";
             // 
@@ -187,12 +197,14 @@
             deleteSelectedPlayerButton.FlatStyle = FlatStyle.Flat;
             deleteSelectedPlayerButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             deleteSelectedPlayerButton.ForeColor = Color.Coral;
-            deleteSelectedPlayerButton.Location = new Point(418, 84);
+            deleteSelectedPlayerButton.Location = new Point(478, 112);
+            deleteSelectedPlayerButton.Margin = new Padding(3, 4, 3, 4);
             deleteSelectedPlayerButton.Name = "deleteSelectedPlayerButton";
-            deleteSelectedPlayerButton.Size = new Size(88, 64);
+            deleteSelectedPlayerButton.Size = new Size(101, 85);
             deleteSelectedPlayerButton.TabIndex = 35;
             deleteSelectedPlayerButton.Text = "Delete Selected";
             deleteSelectedPlayerButton.UseVisualStyleBackColor = true;
+            deleteSelectedPlayerButton.Click += deleteSelectedPlayerButton_Click;
             // 
             // deleteSelectedPrizeButton
             // 
@@ -201,33 +213,36 @@
             deleteSelectedPrizeButton.FlatStyle = FlatStyle.Flat;
             deleteSelectedPrizeButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             deleteSelectedPrizeButton.ForeColor = Color.Coral;
-            deleteSelectedPrizeButton.Location = new Point(418, 217);
+            deleteSelectedPrizeButton.Location = new Point(478, 289);
+            deleteSelectedPrizeButton.Margin = new Padding(3, 4, 3, 4);
             deleteSelectedPrizeButton.Name = "deleteSelectedPrizeButton";
-            deleteSelectedPrizeButton.Size = new Size(88, 61);
+            deleteSelectedPrizeButton.Size = new Size(101, 81);
             deleteSelectedPrizeButton.TabIndex = 38;
             deleteSelectedPrizeButton.Text = "Delete Selected";
             deleteSelectedPrizeButton.UseVisualStyleBackColor = true;
+            deleteSelectedPrizeButton.Click += deleteSelectedPrizeButton_Click;
             // 
             // prizesLabel
             // 
             prizesLabel.AutoSize = true;
             prizesLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             prizesLabel.ForeColor = Color.Coral;
-            prizesLabel.Location = new Point(213, 181);
+            prizesLabel.Location = new Point(243, 241);
             prizesLabel.Name = "prizesLabel";
             prizesLabel.RightToLeft = RightToLeft.Yes;
-            prizesLabel.Size = new Size(117, 21);
+            prizesLabel.Size = new Size(62, 28);
             prizesLabel.TabIndex = 37;
-            prizesLabel.Text = "Teams / Players";
+            prizesLabel.Text = "Prizes";
             // 
             // prizesListBox
             // 
-            prizesListBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            prizesListBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             prizesListBox.FormattingEnabled = true;
-            prizesListBox.ItemHeight = 21;
-            prizesListBox.Location = new Point(213, 205);
+            prizesListBox.ItemHeight = 20;
+            prizesListBox.Location = new Point(243, 273);
+            prizesListBox.Margin = new Padding(3, 4, 3, 4);
             prizesListBox.Name = "prizesListBox";
-            prizesListBox.Size = new Size(190, 88);
+            prizesListBox.Size = new Size(217, 104);
             prizesListBox.TabIndex = 36;
             // 
             // createTournamentButton
@@ -237,19 +252,21 @@
             createTournamentButton.FlatStyle = FlatStyle.Flat;
             createTournamentButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             createTournamentButton.ForeColor = Color.Coral;
-            createTournamentButton.Location = new Point(213, 319);
+            createTournamentButton.Location = new Point(243, 425);
+            createTournamentButton.Margin = new Padding(3, 4, 3, 4);
             createTournamentButton.Name = "createTournamentButton";
-            createTournamentButton.Size = new Size(160, 31);
+            createTournamentButton.Size = new Size(183, 41);
             createTournamentButton.TabIndex = 39;
             createTournamentButton.Text = "Create Tournament";
             createTournamentButton.UseVisualStyleBackColor = true;
+            createTournamentButton.Click += createTournamentButton_Click;
             // 
             // CreateTournamentForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(522, 373);
+            ClientSize = new Size(597, 497);
             Controls.Add(createTournamentButton);
             Controls.Add(deleteSelectedPrizeButton);
             Controls.Add(prizesLabel);
@@ -267,6 +284,7 @@
             Controls.Add(tournamentNameText);
             Controls.Add(tournamentNameLabel);
             Controls.Add(CreateTournamentLabel);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "CreateTournamentForm";
             Text = "CreateTournamentForm";
             ResumeLayout(false);

@@ -46,7 +46,7 @@
             firstNameLabel = new Label();
             teamMembersListBox = new ListBox();
             deleteSelectedPlayerButton = new Button();
-            createTournamentButton = new Button();
+            createTeamButton = new Button();
             addNewMemberGroupBox.SuspendLayout();
             SuspendLayout();
             // 
@@ -97,6 +97,7 @@
             addTeamButton.TabIndex = 34;
             addTeamButton.Text = "Add Member";
             addTeamButton.UseVisualStyleBackColor = true;
+            addTeamButton.Click += addTeamButton_Click;
             // 
             // selectTeamDropDown
             // 
@@ -259,23 +260,25 @@
             deleteSelectedPlayerButton.Name = "deleteSelectedPlayerButton";
             deleteSelectedPlayerButton.Size = new Size(144, 85);
             deleteSelectedPlayerButton.TabIndex = 38;
-            deleteSelectedPlayerButton.Text = "Delete Selected Member";
+            deleteSelectedPlayerButton.Text = "Remove Selected";
             deleteSelectedPlayerButton.UseVisualStyleBackColor = true;
+            deleteSelectedPlayerButton.Click += deleteSelectedPlayerButton_Click;
             // 
-            // createTournamentButton
+            // createTeamButton
             // 
-            createTournamentButton.FlatAppearance.MouseDownBackColor = Color.LightSalmon;
-            createTournamentButton.FlatAppearance.MouseOverBackColor = Color.SeaShell;
-            createTournamentButton.FlatStyle = FlatStyle.Flat;
-            createTournamentButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            createTournamentButton.ForeColor = Color.Coral;
-            createTournamentButton.Location = new Point(277, 597);
-            createTournamentButton.Margin = new Padding(3, 4, 3, 4);
-            createTournamentButton.Name = "createTournamentButton";
-            createTournamentButton.Size = new Size(183, 41);
-            createTournamentButton.TabIndex = 40;
-            createTournamentButton.Text = "Create Team";
-            createTournamentButton.UseVisualStyleBackColor = true;
+            createTeamButton.FlatAppearance.MouseDownBackColor = Color.LightSalmon;
+            createTeamButton.FlatAppearance.MouseOverBackColor = Color.SeaShell;
+            createTeamButton.FlatStyle = FlatStyle.Flat;
+            createTeamButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            createTeamButton.ForeColor = Color.Coral;
+            createTeamButton.Location = new Point(277, 597);
+            createTeamButton.Margin = new Padding(3, 4, 3, 4);
+            createTeamButton.Name = "createTeamButton";
+            createTeamButton.Size = new Size(183, 41);
+            createTeamButton.TabIndex = 40;
+            createTeamButton.Text = "Create Team";
+            createTeamButton.UseVisualStyleBackColor = true;
+            createTeamButton.Click += createTeamButton_Click;
             // 
             // CreateTeamForm
             // 
@@ -283,7 +286,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(710, 655);
-            Controls.Add(createTournamentButton);
+            Controls.Add(createTeamButton);
             Controls.Add(deleteSelectedPlayerButton);
             Controls.Add(teamMembersListBox);
             Controls.Add(addNewMemberGroupBox);
@@ -322,6 +325,6 @@
         private Button createMemberButton;
         private ListBox teamMembersListBox;
         private Button deleteSelectedPlayerButton;
-        private Button createTournamentButton;
+        private Button createTeamButton;
     }
 }
